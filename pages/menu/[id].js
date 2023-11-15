@@ -28,10 +28,8 @@ export default function DessertEntry({ itemData }) {
     <Layout>
       <article className="card col-6 margin-auto">
         <div className="card-body">
-          <h5>Post Content</h5>
-          <div className="card-text" dangerouslySetInnerHTML={{ __html: itemData.post_content }}>
-
-          </div>
+          <h5>Post Date</h5>
+          <h5 className="card-title">{itemData.post_date}</h5>
           <h5 className="card-title">{itemData.dessert2}</h5>
           <h5 className="card-title">{itemData.dessert3}</h5>
           <h5 className="card-title">{itemData.dessert4}</h5>
